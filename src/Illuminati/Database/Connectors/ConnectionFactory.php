@@ -35,7 +35,7 @@ class ConnectionFactory extends Laravel\ConnectionFactory {
 	 * @param  string  $tablePrefix
 	 * @return Illuminate\Database\Connection
 	 */
-	protected function createConnection($driver, PDO $connection, $database, $tablePrefix = '')
+	protected function createConnection($driver, PDO $connection, $database, $tablePrefix = '', array $config = array())
 	{
 		switch ($driver)
 		{
@@ -45,7 +45,7 @@ class ConnectionFactory extends Laravel\ConnectionFactory {
 				return new FirebirdConnection($connection, $database, $tablePrefix);
 		}
 
-		return parent::createConnection($driver, $connection, $database, $tablePrefix);
+		return parent::createConnection($driver, $connection, $database, $tablePrefix, $config);
 	}
 
 }
