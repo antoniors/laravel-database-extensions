@@ -1,6 +1,6 @@
 <?php namespace Illuminati\Database\Connectors;
 
-use Illuminate\Database\Connectors as Laravel
+use Illuminate\Database\Connectors as Laravel;
 
 class FirebirdConnector extends Laravel\Connector implements Laravel\ConnectorInterface {
 
