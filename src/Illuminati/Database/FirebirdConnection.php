@@ -2,7 +2,7 @@
 
 use Illuminate\Database as Laravel;
 
-class ODBCConnection extends Laravel/Connection {
+class FirebirdConnection extends Laravel/Connection {
 
 	/**
 	 * Get the default query grammar instance.
@@ -11,7 +11,7 @@ class ODBCConnection extends Laravel/Connection {
 	 */
 	protected function getDefaultQueryGrammar()
 	{
-		return $this->withTablePrefix(new Query\Grammars\ODBCGrammar);
+		return $this->withTablePrefix(new Query\Grammars\FirebirdGrammar);
 	}
 
 	/**
@@ -21,7 +21,7 @@ class ODBCConnection extends Laravel/Connection {
 	 */
 	protected function getDefaultSchemaGrammar()
 	{
-		return $this->withTablePrefix(new Schema\Grammars\ODBCGrammar);
+		return $this->withTablePrefix(new Schema\Grammars\FirebirdGrammar);
 	}
 
 }

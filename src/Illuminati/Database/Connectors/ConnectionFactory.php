@@ -4,6 +4,7 @@ use Illuminate\Database\Connectors as Laravel;
 
 use PDO;
 use Illuminati\Database\ODBCConnection;
+use Illuminati\Database\FirebirdConnection;
 
 class ConnectionFactory extends Laravel\ConnectionFactory {
 
