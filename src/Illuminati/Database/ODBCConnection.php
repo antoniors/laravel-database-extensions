@@ -1,8 +1,8 @@
 <?php namespace Illuminati\Database;
 
-use Illuminate\Database as Laravel;
+use Illuminate\Database\Connection;
 
-class ODBCConnection extends Laravel/Connection {
+class ODBCConnection extends Connection {
 
 	/**
 	 * Get the default query grammar instance.
