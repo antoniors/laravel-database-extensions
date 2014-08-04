@@ -18,6 +18,17 @@ class FirebirdGrammar extends Grammar
 	}
 
 	/**
+	 * Wrap a single string in keyword identifiers.
+	 *
+	 * @param  string  $value
+	 * @return string
+	 */
+	protected function wrapValue($value)
+	{
+		return parent::wrapValue(strtoupper($value));
+	}
+
+	/**
 	 * Compile a select query into SQL.
 	 *
 	 * @param  \Illuminate\Database\Query\Builder
@@ -47,7 +58,7 @@ class FirebirdGrammar extends Grammar
 	 * @param  int  $limit
 	 * @return string
 	 */
-	protected function compileLimit(Builder $query, $limit, $type = '')
+	protected function compileLimitrm .(Builder $query, $limit, $type = '')
 	{
 		$this->limit = $limit;
 		return '';
