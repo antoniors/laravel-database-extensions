@@ -1,14 +1,14 @@
 {
-    "name": "greglamb/laravel-database-extensions",
+    "name": "sagetarian/laravel-firebird-extension",
     "type": "library",
-    "description": "Additional database options for Laravel 4",
-    "keywords": ["database", "laravel", "odbc", "firebird"],
+    "description": "Additional firebird option for Laravel 4",
+    "keywords": ["database", "laravel", "firebird"],
     "license": "MIT",
-    "homepage": "http://github.com/greglamb/laravel-database-extensions",
+    "homepage": "http://github.com/sagetarian/laravel-firebird-extension",
     "authors": [
         {
-            "name": "Greg Lamb",
-            "email": "email@greglamb.me"
+            "name": "Shannon Antonio Black",
+            "email": "shannon@netforge.co.za"
         }
     ],
     "require": {
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Illuminati\\Database": "src/"
+            "Sagetarian\\Database": "src/"
         }
     },
     "minimum-stability": "dev"
