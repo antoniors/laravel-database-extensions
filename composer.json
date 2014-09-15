@@ -1,10 +1,10 @@
 {
-    "name": "sagetarian/laravel-firebird-extension",
+    "name": "sagetarian/laravel-database-extensions",
     "type": "library",
     "description": "Additional firebird option for Laravel 4",
     "keywords": ["database", "laravel", "firebird"],
     "license": "MIT",
-    "homepage": "http://github.com/sagetarian/laravel-firebird-extension",
+    "homepage": "http://github.com/sagetarian/laravel-database-extensions",
     "authors": [
         {
             "name": "Shannon Antonio Black",
