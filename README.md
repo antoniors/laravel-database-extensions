@@ -10,12 +10,7 @@
 
 ```php
 'providers' => array(
-/*  'Illuminate\Database\DatabaseServiceProvider', */
-  'Illuminati\Database\DatabaseServiceProvider',
-),
-
-'aliases' => array(
-  'EloquentValidated' => 'Illuminati\Database\Eloquent\Model',
+  	'Illuminati\Database\DatabaseServiceProvider',
 ),
 ```
 
@@ -23,13 +18,13 @@
 
 ```json
 "repositories": [
-  {
-    "type": "vcs",
-    "url": "https://github.com/greglamb/laravel-database-extensions"
-  }
+    {
+        "type": "git",
+        "url": "https://github.com/sagetarian/laravel-database-extensions.git"
+    }
 ],
 
 "require": {
-  "greglamb/laravel-database-extensions": "*"
+  	"sagetarian/laravel-database-extensions" : "dev-master"
 },
 ```
