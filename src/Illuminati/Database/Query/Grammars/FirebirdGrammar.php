@@ -58,7 +58,7 @@ class FirebirdGrammar extends Grammar
 	 * @param  int  $limit
 	 * @return string
 	 */
-	protected function compileLimitrm .(Builder $query, $limit, $type = '')
+	protected function compileLimit(Builder $query, $limit, $type = '')
 	{
 		$this->limit = $limit;
 		return '';
