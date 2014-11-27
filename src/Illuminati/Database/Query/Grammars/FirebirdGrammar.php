@@ -42,9 +42,9 @@ class FirebirdGrammar extends Grammar
 			$sql = '('.$sql.') '.$this->compileUnions($query);
 		}
 
-		if (isset($this->limit) || isset($this->offset)) {
-			$limit = isset($this->limit) ? ' first '.(int) $this->limit : '';
-			$offset = isset($this->offset) ? ' skip '.(int) $this->offset : '';
+		if (isset($query->limit) || isset($query->offset)) {
+			$limit = isset($query->limit) ? ' first '.(int) $query->limit : '';
+			$offset = isset($query->offset) ? ' skip '.(int) $query->offset : '';
 			$sql = str_replace("select", "select".$limit.$offset, $sql);
 		}
 
@@ -60,7 +60,6 @@ class FirebirdGrammar extends Grammar
 	 */
 	protected function compileLimit(Builder $query, $limit, $type = '')
 	{
-		$this->limit = $limit;
 		return '';
 	}
 
@@ -73,7 +72,6 @@ class FirebirdGrammar extends Grammar
 	 */
 	protected function compileOffset(Builder $query, $offset)
 	{
-		$this->offset = $offset;
 		return '';
 	}
 }
